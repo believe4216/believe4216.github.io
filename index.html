@@ -1,90 +1,64 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html>
 <head>
   <meta charset="utf-8">
   
   <title>Chen&#39;s Personal Blog</title>
+  <meta name="author" content="Chen Chen">
+  
+  
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Chen's Personal Blog">
-<meta property="og:url" content="http://believe4216.github.io/index.html">
-<meta property="og:site_name" content="Chen's Personal Blog">
-<meta property="og:description">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Chen's Personal Blog">
-<meta name="twitter:description">
+
   
-    <link rel="alternate" href="/atom.xml" title="Chen&#39;s Personal Blog" type="application/atom+xml">
+  <meta property="og:site_name" content="Chen&#39;s Personal Blog"/>
+
   
+    <meta property="og:image" content="undefined"/>
   
-    <link rel="icon" href="/favicon.png">
-  
-  
-    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
-  
-  <link rel="stylesheet" href="/css/style.css">
+
+  <link href="/favicon.png" rel="icon">
+  <link rel="alternate" href="/atom.xml" title="Chen&#39;s Personal Blog" type="application/atom+xml">
+  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
   
 
 </head>
 
+
 <body>
-  <div id="container">
-    <div id="wrap">
-      <header id="header">
-  <div id="banner"></div>
-  <div id="header-outer" class="outer">
-    <div id="header-title" class="inner">
-      <h1 id="logo-wrap">
-        <a href="/" id="logo">Chen&#39;s Personal Blog</a>
-      </h1>
-      
-    </div>
-    <div id="header-inner" class="inner">
-      <nav id="main-nav">
-        <a id="main-nav-toggle" class="nav-icon"></a>
-        
-          <a class="main-nav-link" href="/">Home</a>
-        
-          <a class="main-nav-link" href="/archives">Archives</a>
-        
-      </nav>
-      <nav id="sub-nav">
-        
-          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
-        
-        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
-      </nav>
-      <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://believe4216.github.io"></form>
-      </div>
-    </div>
-  </div>
+  <header id="header" class="inner"><div class="alignleft">
+  <h1><a href="/">Chen&#39;s Personal Blog</a></h1>
+  <h2><a href="/"></a></h2>
+</div>
+<nav id="main-nav" class="alignright">
+  <ul>
+    
+      <li><a href="/">Home</a></li>
+    
+      <li><a href="/archives">Archives</a></li>
+    
+  </ul>
+  <div class="clearfix"></div>
+</nav>
+<div class="clearfix"></div>
 </header>
-      <div class="outer">
-        <section id="main">
+  <div id="content" class="inner">
+    <div id="main-col" class="alignleft"><div id="wrapper">
+  <article class="post">
   
-    <article id="post-first-post" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2016/05/11/first-post/" class="article-date">
-  <time datetime="2016-05-12T04:41:13.000Z" itemprop="datePublished">2016-05-11</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
+        <time datetime="2016-05-12T04:41:13.000Z"><a href="/2016/05/11/first-post/">2016-05-11</a></time>
+      
+      
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/05/11/first-post/">first-post</a>
-    </h1>
+    <h1 class="title"><a href="/2016/05/11/first-post/">first-post</a></h1>
   
 
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
+    </header>
+    <div class="entry">
       
         <h2 id="1-Plot-Strain-Stress-Curve-from-Lammps-Output-Data"><a href="#1-Plot-Strain-Stress-Curve-from-Lammps-Output-Data" class="headerlink" title="1. Plot Strain-Stress Curve from Lammps Output Data"></a>1. Plot Strain-Stress Curve from Lammps Output Data</h2><p>This example shows how to plot a stress-strain curve in MATLAB using output data from the parallel molecular dynamics code, LAMMPS. This example will reference the scripts and data of the <a href="https://icme.hpc.msstate.edu/mediawiki/index.php/Uniaxial_Tension" target="_blank" rel="external">Uniaxial Tension in Single Crystal Aluminum</a> and <a href="https://icme.hpc.msstate.edu/mediawiki/index.php/Uniaxial_Compression" target="_blank" rel="external">Uniaxial Compression in Single Crystal Aluminum</a> examples.</p>
 <figure class="highlight matlab"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">% Analyze def1.txt files</span></span><br><span class="line"><span class="comment">% Plot the various responses</span></span><br><span class="line"></span><br><span class="line">d = dir(<span class="string">'*.def1.txt'</span>);</span><br><span class="line"><span class="keyword">for</span> <span class="built_in">i</span> = <span class="number">1</span>:<span class="built_in">length</span>(d)</span><br><span class="line">  <span class="comment">% get data</span></span><br><span class="line">  fname = d(<span class="built_in">i</span>).name;</span><br><span class="line">  A = importdata(fname);</span><br><span class="line">  <span class="comment">% Define strain as first column of data in A (*.def1.txt)</span></span><br><span class="line">  strain = A.data(:, <span class="number">1</span>);</span><br><span class="line">  <span class="comment">% Define stress as second through fourth columns in A (*.def1.txt)</span></span><br><span class="line">  stress = A.data(:, <span class="number">2</span>:<span class="number">4</span>);</span><br><span class="line"></span><br><span class="line">  <span class="comment">% Generate plot</span></span><br><span class="line">  plot(strain, stress(:, <span class="number">1</span>), <span class="string">'-or'</span>, <span class="string">'LineWidth'</span>, <span class="number">2</span>, <span class="string">'MarkerEdgeColor'</span>, <span class="string">'r'</span>,...</span><br><span class="line">      <span class="string">'MarkerFaceColor'</span>, <span class="string">'r'</span>, <span class="string">'MarkerSize'</span>, <span class="number">5</span>), hold on</span><br><span class="line">  plot(strain, stress(:, <span class="number">2</span>), <span class="string">'-ob'</span>, <span class="string">'LineWidth'</span>, <span class="number">2</span>, <span class="string">'MarkerEdgeColor'</span>, <span class="string">'b'</span>,...</span><br><span class="line">      <span class="string">'MarkerFaceColor'</span>, <span class="string">'b'</span>, <span class="string">'MarkerSize'</span>, <span class="number">5</span>);</span><br><span class="line">  plot(strain, stress(:, <span class="number">3</span>), <span class="string">'-og'</span>, <span class="string">'LineWidth'</span>, <span class="number">2</span>, <span class="string">'MarkerEdgeColor'</span>, <span class="string">'g'</span>,...</span><br><span class="line">      <span class="string">'MarkerFaceColor'</span>, <span class="string">'g'</span>, <span class="string">'MarkerSize'</span>, <span class="number">5</span>);</span><br><span class="line">  axis square</span><br><span class="line">  ylim([<span class="number">0</span> <span class="number">10</span>])</span><br><span class="line">  set(gca, <span class="string">'LineWidth'</span>, <span class="number">2</span>, <span class="string">'FontSize'</span>, <span class="number">24</span>, <span class="string">'FontWeight'</span>, <span class="string">'normal'</span>, <span class="string">'FontName'</span>, <span class="string">'Times'</span>);</span><br><span class="line">  set(get(gca, <span class="string">'XLabel'</span>), <span class="string">'String'</span>, <span class="string">'Strain'</span>, <span class="string">'FontSize'</span>, <span class="number">32</span>, <span class="string">'FontWeight'</span>, <span class="string">'bold'</span>, <span class="string">'FontName'</span>, <span class="string">'Times'</span>);</span><br><span class="line">  set(get(gca, <span class="string">'YLabel'</span>), <span class="string">'String'</span>, <span class="string">'Stress (GPa)'</span>, <span class="string">'FontSize'</span>, <span class="number">32</span>, <span class="string">'FontWeight'</span>, <span class="string">'bold'</span>, <span class="string">'FontName'</span>, <span class="string">'Times'</span>);</span><br><span class="line">  set(gcf, <span class="string">'Postion'</span>, [<span class="number">1</span> <span class="number">1</span> round(<span class="number">1000</span>) round(<span class="number">1000</span>)]);</span><br><span class="line"></span><br><span class="line">  <span class="comment">% Export the figure to a tif file</span></span><br><span class="line">  exportfig(gcf, strrep(fname, <span class="string">'.def1.txt'</span>, <span class="string">'.tif'</span>), <span class="string">'Format'</span>, <span class="string">'tiff'</span>, <span class="string">'Color'</span>, <span class="string">'rgb'</span>, <span class="string">'Resolution'</span>, <span class="number">300</span>);</span><br><span class="line"><span class="keyword">end</span></span><br></pre></td></tr></table></figure>
@@ -100,38 +74,34 @@
 
       
     </div>
-    <footer class="article-footer">
-      <a data-url="http://believe4216.github.io/2016/05/11/first-post/" data-id="cio3t7ua1000074wbiu38deur" class="article-share-link">Share</a>
+    <footer>
       
+        
+        
       
+      <div class="clearfix"></div>
     </footer>
   </div>
-  
 </article>
 
 
+
+
+  <article class="post">
   
-    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2016/05/11/hello-world/" class="article-date">
-  <time datetime="2016-05-12T04:33:38.000Z" itemprop="datePublished">2016-05-11</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
+        <time datetime="2016-05-12T04:33:38.000Z"><a href="/2016/05/11/hello-world/">2016-05-11</a></time>
+      
+      
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/05/11/hello-world/">Hello World</a>
-    </h1>
+    <h1 class="title"><a href="/2016/05/11/hello-world/">Hello World</a></h1>
   
 
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
+    </header>
+    <div class="entry">
       
         <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
 <h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
@@ -145,90 +115,59 @@
 
       
     </div>
-    <footer class="article-footer">
-      <a data-url="http://believe4216.github.io/2016/05/11/hello-world/" data-id="cio3t7ua8000174wb8yl7qvi3" class="article-share-link">Share</a>
+    <footer>
       
+        
+        
       
+      <div class="clearfix"></div>
     </footer>
   </div>
-  
 </article>
 
 
-  
-
-</section>
-        
-          <aside id="sidebar">
-  
-    
-
-  
-    
-
-  
-    
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Archives</h3>
-    <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/05/">May 2016</a></li></ul>
-    </div>
-  </div>
 
 
+
+<nav id="pagination">
   
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Recent Posts</h3>
-    <div class="widget">
-      <ul>
-        
-          <li>
-            <a href="/2016/05/11/first-post/">first-post</a>
-          </li>
-        
-          <li>
-            <a href="/2016/05/11/hello-world/">Hello World</a>
-          </li>
-        
-      </ul>
-    </div>
-  </div>
+  
+  <div class="clearfix"></div>
+</nav></div></div>
+    <aside id="sidebar" class="alignright">
+  <div class="search">
+  <form action="//google.com/search" method="get" accept-charset="utf-8">
+    <input type="search" name="q" results="0" placeholder="Suche">
+    <input type="hidden" name="q" value="site:believe4216.github.io">
+  </form>
+</div>
+
+  
 
   
 </aside>
-        
-      </div>
-      <footer id="footer">
-  
-  <div class="outer">
-    <div id="footer-info" class="inner">
-      &copy; 2016 Chen Chen<br>
-      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
-    </div>
+    <div class="clearfix"></div>
   </div>
-</footer>
-    </div>
-    <nav id="mobile-nav">
+  <footer id="footer" class="inner"><div class="alignleft">
   
-    <a href="/" class="mobile-nav-link">Home</a>
+  &copy; 2016 Chen Chen
   
-    <a href="/archives" class="mobile-nav-link">Archives</a>
-  
-</nav>
-    
-
-<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-
-
-  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
-  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+</div>
+<div class="clearfix"></div></footer>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
 
 
-<script src="/js/script.js"></script>
 
-  </div>
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+(function($){
+  $('.fancybox').fancybox();
+})(jQuery);
+</script>
+
 </body>
 </html>
