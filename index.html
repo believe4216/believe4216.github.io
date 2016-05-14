@@ -50,6 +50,47 @@
     <header>
       
         <div class="icon"></div>
+        <time datetime="2016-05-14T20:24:48.000Z"><a href="/2016/05/14/Markdown中设置图片的对齐方式/">2016-05-14</a></time>
+      
+      
+  
+    <h1 class="title"><a href="/2016/05/14/Markdown中设置图片的对齐方式/">Markdown中设置图片的对齐方式</a></h1>
+  
+
+    </header>
+    <div class="entry">
+      
+        <p>Markdown 图片插入语法功能很单一，无法设置图片的对齐方式。上网搜索一下解决办法，发现可以通过在 Markdown文件中嵌入 HTML 语句的方式来设置图片的格式。</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">p</span> <span class="attr">align</span>=<span class="string">"center"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">"imagename.jpg"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>其中的<code>&lt;img&gt;</code>语句还可以设置图片大小。</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">"imagename.jpg"</span> <span class="attr">style</span>=<span class="string">"width:128px;height:128px;"</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>参考网页：</p>
+<ol>
+<li><a href="http://stackoverflow.com/questions/255170/markdown-and-image-alignment" target="_blank" rel="external">http://stackoverflow.com/questions/255170/markdown-and-image-alignment</a></li>
+<li><a href="http://www.w3schools.com/html/html_images.asp" target="_blank" rel="external">http://www.w3schools.com/html/html_images.asp</a></li>
+</ol>
+
+      
+    </div>
+    <footer>
+      
+        
+        
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+
+
+  <article class="post">
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
         <time datetime="2016-05-12T04:41:13.000Z"><a href="/2016/05/11/first-post/">2016-05-11</a></time>
       
       
@@ -87,47 +128,6 @@
 
 
 
-  <article class="post">
-  
-  <div class="post-content">
-    <header>
-      
-        <div class="icon"></div>
-        <time datetime="2016-05-12T04:33:38.000Z"><a href="/2016/05/11/hello-world/">2016-05-11</a></time>
-      
-      
-  
-    <h1 class="title"><a href="/2016/05/11/hello-world/">Hello World</a></h1>
-  
-
-    </header>
-    <div class="entry">
-      
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
-
-      
-    </div>
-    <footer>
-      
-        
-        
-      
-      <div class="clearfix"></div>
-    </footer>
-  </div>
-</article>
-
-
-
-
 
 <nav id="pagination">
   
@@ -148,6 +148,8 @@
 <div class="widget tag">
   <h3 class="title">Tags</h3>
   <ul class="entry">
+  
+    <li><a href="/tags/Markdown/">Markdown</a><small>1</small></li>
   
     <li><a href="/tags/Matlab/">Matlab</a><small>1</small></li>
   
