@@ -44,6 +44,46 @@
 </header>
   <div id="content" class="inner">
     <div id="main-col" class="alignleft"><div id="wrapper">
+  <article class="raspberry">
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
+        <time datetime="2016-05-16T01:13:56.000Z"><a href="/2016/05/15/Raspberry Pi 开机自动运行程序/">2016-05-15</a></time>
+      
+      
+  
+    <h1 class="title"><a href="/2016/05/15/Raspberry Pi 开机自动运行程序/">Raspberry Pi 开机自动运行程序</a></h1>
+  
+
+    </header>
+    <div class="entry">
+      
+        <p>我最近在使用 Raspberry Pi 来进行拍照记录日常状态。之前我每次要启动拍照的 python 脚本，都需要对 Rasberry pi 连接显示器和键盘鼠标，手动运行那个脚本。今天我想，要是可以设置 Raspberry pi 开机自动运行那个脚本就好了。这样我就只需要将 Raspberry pi 插上电源，延时拍照的程序就自动运行了。等之后需要查看图片的时候，只需要掉电，拔出 Raspberry pi 的存储卡，在我的笔记本上查看就好了。</p>
+<p>想一想感觉完全可行。我就网上查了一些资料，开始捣鼓。只用了十多分钟就搞定了。</p>
+<p>我的想法是开机自动运行一个 shell 脚本，然后在 shell 脚本里面设置运行这个 Python 脚本。这样的好处是，以后我想修改开机自动运行的程序就只需要修改shell 脚本，而不需要再做系统层次的设置了。</p>
+<p>关于 Linux shell脚本的基础知识在 <a href="https://github.com/qinjx/30min_guides/blob/master/shell.md" target="_blank" rel="external">Github</a> 上可以看到。我根据文档编写了自己的脚本，如下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">#!/bin/bash</span><br><span class="line">cd ./python</span><br><span class="line">python camera08.py</span><br></pre></td></tr></table></figure>
+<p>要想运行 shell 脚本需要修改其可执行属性，使用命令 <code>chmod +x auto_start.sh</code>。</p>
+<p>接下来就是进行系统层面的设置了，设置开机自动运行上面的 shell 脚本。看了网上的资料，我只需要修改一个系统文件（/etc/rc.local）就好。我在该文件最后的 <code>exit 0</code> 之前插入了下面两行命令。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cd /home/pi/Documents/</span><br><span class="line">./auto_start.sh</span><br></pre></td></tr></table></figure>
+
+      
+    </div>
+    <footer>
+      
+        
+        
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+
+
   <article class="post">
   
   <div class="post-content">
@@ -72,7 +112,7 @@
 <blockquote>
 <p>无论是有关工作还是娱乐，只要时间有限，我们都会尽量将其利用得淋漓尽致。我们将这种现象称为“专注红利” (focus dividend)，也就是稀缺俘获大脑时所产生的积极成果。</p>
 </blockquote>
-<p>一个名为《愤怒的蓝莓》的游戏实验表明，无论真实世界中发生了什么（稀缺形式），稀缺都能够创造出专注红利。而专注红利来源于我们提出的核心远离：稀缺俘获大脑。而且佯装的稀缺是很难凑效的。</p>
+<p>一个名为《愤怒的蓝莓》的游戏实验表明，无论真实世界中发生了什么（稀缺形式），稀缺都能够创造出专注红利。而专注红利来源于我们提出的核心原理：稀缺俘获大脑。而且佯装的稀缺是很难凑效的。</p>
 <p>这些实验也表明，稀缺会在许多不同的时间单位中俘获我们的注意力，从几毫秒到几周。这反映了稀缺是如何通过潜意识和有意识的行为这两方面来俘获人类的大脑的。“在思考快与慢的两个节奏上，稀缺都会俘获大脑。”——丹尼尔•卡尼曼。</p>
 <hr>
 <blockquote>
